@@ -1,0 +1,124 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.section, .hero{
+    background-image:url('image/background-dekstop.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+section {
+  background: #ffffff00;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+.nama, img{
+    width: 740px;
+}
+.foto-mempelai, img{
+    width: 320px;
+}
+button {
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #35377a;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .btn {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  btn:hover .button_top {
+    transform: translateY(-0.33em);
+  }
+  
+  btn:active .button_top {
+    transform: translateY(0);
+  }
+  .judul{
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 2px 2px #00000044;
+  }
+  .judul2, .jadwal2{
+    font-family: "Delius", cursive;
+    font-weight: bolder;
+    font-size: 12px;
+    font-style: normal;
+    text-shadow: 1px 2px 2px #00000044;
+  }
+  .music {
+    position: fixed;
+    display: none;
+}
+.terima-kasih{
+  font-size: 12px;
+  font-family: "Delius", cursive;
+  font-weight: bolder;
+}
+
+
+@media only screen and (max-width: 768px){
+    .section, .hero{
+        background-image:url('image/background.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+    
+    .nama-pengantin{
+        width: 290px;
+    }
+    .foto-mempelai, img{
+        width: 220px;
+    }
+    
+    .gallery-item {
+      margin-bottom: 10px;
+    }
+    .gallery-item img {
+      width: 140px; 
+      height: 160px; 
+      box-shadow: 2px 4px 8px rgba(8, 8, 8, 0.651);
+  }
+  
+  .galery {
+      max-width: 70%; 
+      margin-left: auto;
+      margin-right: auto;
+  }
+    
+    
+}
+
