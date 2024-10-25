@@ -16,7 +16,8 @@ html,body{
 body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 section {
@@ -88,7 +89,7 @@ button {
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 576px){
     .section, .hero{
         background-image:url('image/background.jpeg');
         background-size: cover;
